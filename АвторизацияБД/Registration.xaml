@@ -1,0 +1,21 @@
+﻿<Window x:Class="АвторизацияБД.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:АвторизацияБД"
+        mc:Ignorable="d"
+        Title="Registration" Height="435" Width="359" WindowStyle="None" Background="#FF383838" ResizeMode="NoResize" ShowInTaskbar="True">
+    <Grid>
+        <TextBox x:Name="tb_regpass" Text="{Binding pass}" Margin="70,269,0,0" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Width="232" FontFamily="Bahnschrift Light" FontSize="14" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Password" Margin="61,238,0,0" HorizontalAlignment="Left" Width="82" Height="26" VerticalAlignment="Top" FontFamily="Bahnschrift Light" FontSize="14" Foreground="White" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBox x:Name="tb_reglogin" Text="{Binding login}" Margin="70,206,0,0" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Width="232" FontFamily="Bahnschrift Light" FontSize="14" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Login" Margin="61,171,0,0" HorizontalAlignment="Left" Width="82" Height="30" VerticalAlignment="Top" FontFamily="Bahnschrift Light" FontSize="14" Foreground="White" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Регистрация" Margin="132,15,0,0" HorizontalAlignment="Left" Width="108" Height="30" VerticalAlignment="Top" FontFamily="Bahnschrift Light" FontSize="16" Foreground="White" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBlock x:Name="lb_regtaskbar" Margin="61,50,0,0" Height="46" VerticalAlignment="Top" HorizontalAlignment="Left" Width="241" FontFamily="Bahnschrift Light" FontSize="14" Background="{x:Null}" TextAlignment="Center" Foreground="#FFFF5B5B" FontWeight="Bold" FontStyle="Italic" />
+        <TextBox x:Name="tb_regmail" Text="{Binding mail}"  Margin="70,147,0,0" Height="27" VerticalAlignment="Top" HorizontalAlignment="Left" Width="232" FontFamily="Bahnschrift Light" FontSize="14" Background="{x:Null}" Foreground="White" FontWeight="Bold" FontStyle="Italic"/>
+        <Label Content="Mail" Margin="61,112,0,0" HorizontalAlignment="Left" Width="82" Height="30" VerticalAlignment="Top" FontFamily="Bahnschrift Light" FontSize="14" Foreground="White" FontWeight="Bold" FontStyle="Italic"/>
+        <Button Content="Назад" Margin="70,373,0,0" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Width="73" Background="{x:Null}" FontFamily="Bahnschrift Light" FontSize="14" Foreground="White" FontWeight="Bold" FontStyle="Italic" Click="Button_Click_Back" />
+        <Button Content="Зарегистрироваться" Margin="148,373,0,0" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Width="154" Background="{x:Null}" FontFamily="Bahnschrift Light" FontSize="14" Foreground="White" FontWeight="Bold" FontStyle="Italic" Click="Registration_Click" />
+    </Grid>
+</Window>
